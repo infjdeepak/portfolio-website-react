@@ -12,6 +12,9 @@ html{
 body{
     background: #1b1b1b;
     color: #f0f0f0;
+    font-family: 'Inter', sans-serif;
+
+
 }
 h1{
     font-size: 5.5rem;
@@ -47,6 +50,7 @@ span{
     color: #23d997;
 }
 button{
+    font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
@@ -60,5 +64,8 @@ button{
         color: #1b1b1b;
     }
 }
+/* .logo{
+    font-family: 'Lobster', cursive;
+} */
 `;
 export default GlobalStyles;
