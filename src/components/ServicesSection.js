@@ -52,7 +52,7 @@ const ServicesSection = () => {
 //styled components
 const Services = styled(About)`
   .title {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
 `;
 const Cards = styled.div`

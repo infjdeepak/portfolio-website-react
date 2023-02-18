@@ -4,8 +4,10 @@ const Nav = () => {
   return (
     <header>
       <Navbar>
-        <div className="logo">
-          <a href="/">Portfolio</a>
+        <div>
+          <a href="/" className="logo">
+            Portfolio
+          </a>
         </div>
         <ul className="nav-links">
           <li>
@@ -30,18 +32,17 @@ const Navbar = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: #282828;
   .logo {
-    flex: 1;
-    a {
-      font-family: "Lobster", cursive;
-      font-weight: 400;
-      font-size: 2.5rem;
-    }
+    font-family: "Lobster", cursive;
+    font-weight: 400;
+    font-size: 2.4rem;
   }
   .nav-links {
-    flex: 1;
     display: flex;
-    justify-content: space-between;
+  }
+  li {
+    padding-left: 4rem;
   }
 `;
 export default Nav;
