@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 html{
     font-size: 62.5%;
@@ -64,8 +65,6 @@ button{
         color: #1b1b1b;
     }
 }
-/* .logo{
-    font-family: 'Lobster', cursive;
-} */
+
 `;
 export default GlobalStyles;
