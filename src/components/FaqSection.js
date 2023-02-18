@@ -51,7 +51,9 @@ const Faq = styled(About)`
   }
   .question {
     padding: 1rem 0rem;
-    cursor: pointer;
+    h4 {
+      cursor: pointer;
+    }
   }
   .answer {
     padding: 4rem 0rem;
