@@ -11,13 +11,13 @@ const Nav = () => {
         </div>
         <ul className="nav-links">
           <li>
-            <Link to="/">01. About Us</Link>
+            <Link to="/">1. About Us</Link>
           </li>
           <li>
-            <Link to="/work">02. Our Work</Link>
+            <Link to="/work">2. Our Work</Link>
           </li>
           <li>
-            <Link to="/contact">03. Contact Us</Link>
+            <Link to="/contact">3. Contact Us</Link>
           </li>
         </ul>
       </Navbar>

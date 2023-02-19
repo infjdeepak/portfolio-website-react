@@ -2,7 +2,7 @@ import styled from "styled-components";
 export const About = styled.div`
   min-height: 90vh;
   min-height: 90svh;
-  padding: 2rem 5%;
+  padding: 4rem 5%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;

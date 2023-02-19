@@ -8,9 +8,6 @@ import { About, Description, Image } from "../styles";
 const ServicesSection = () => {
   return (
     <Services>
-      <Image>
-        <img src={home2} alt="camera" />
-      </Image>
       <Description>
         <h2 className="title">
           High <span>quality</span> service.
@@ -46,6 +43,9 @@ const ServicesSection = () => {
           </Card>
         </Cards>
       </Description>
+      <Image>
+        <img src={home2} alt="camera" />
+      </Image>
     </Services>
   );
 };
