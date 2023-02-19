@@ -2,6 +2,8 @@ import { MovieState } from "../movieState.js";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 const MovieDetails = () => {
   const url = useLocation().pathname;
   const [movies, setMovies] = useState(MovieState);
@@ -14,7 +16,12 @@ const MovieDetails = () => {
   return (
     <>
       {movie && (
-        <Details>
+        <Details
+          variants={pageAnimation}
+          initial={"hidden"}
+          animate={"show"}
+          exit={"exit"}
+        >
           <Headline>
             <h2>{movie.title}</h2>
             <img src={movie.mainImg} alt="" />
@@ -38,7 +45,7 @@ const MovieDetails = () => {
 };
 
 //styled components
-const Details = styled.div``;
+const Details = styled(motion.div)``;
 const Headline = styled.div`
   min-height: 90vh;
   min-height: 90svh;

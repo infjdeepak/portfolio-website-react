@@ -14,8 +14,7 @@ body{
     background: #1b1b1b;
     color: #f0f0f0;
     font-family: 'Inter', sans-serif;
-
-
+overflow-x: hidden;
 }
 h1{
     font-size: 5.5rem;
