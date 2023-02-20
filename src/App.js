@@ -8,7 +8,6 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 function App() {
   const location = useLocation();
-  console.log(location);
   return (
     <div className="App">
       <GlobalStyles />
