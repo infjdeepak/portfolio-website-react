@@ -7,6 +7,7 @@ export const About = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 5rem;
+  position: relative;
 `;
 export const Description = styled.div`
   flex: 2 1 30rem;
