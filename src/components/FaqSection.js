@@ -65,11 +65,11 @@ const Faq = styled(About)`
   .faq-line {
     background-color: #cccccc;
     height: 0.2rem;
-    margin: 2rem 0;
+    margin-top: 1rem;
     width: 100%;
   }
   .question {
-    padding: 1rem 0rem;
+    margin: 4rem 0;
     cursor: pointer;
   }
   .answer {
