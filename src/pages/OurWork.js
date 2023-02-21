@@ -84,7 +84,7 @@ const OurWork = () => {
 //styled components
 const Work = styled(motion.div)`
   padding: 0 5%;
-  color: #1b1b1b;
+  color: #353535;
   background: whitesmoke;
 `;
 const Movie = styled(motion.div)`
