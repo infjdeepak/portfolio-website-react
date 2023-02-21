@@ -3,6 +3,7 @@ import ServicesSection from "../components/ServicesSection";
 import FaqSection from "../components/FaqSection";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+import ScrollUp from "../components/ScrollUp";
 const AboutUs = () => {
   return (
     <motion.div
@@ -14,6 +15,7 @@ const AboutUs = () => {
       <AboutSection />
       <ServicesSection />
       <FaqSection />
+      <ScrollUp />
     </motion.div>
   );
 };

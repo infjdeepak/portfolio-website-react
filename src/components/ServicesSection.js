@@ -4,7 +4,7 @@ import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import styled from "styled-components";
-import { About, Description, Image, Hide } from "../styles";
+import { About, Description, Image } from "../styles";
 //scroll
 import { useScroll } from "./useScroll";
 import { fade, imageAnim, swipeAnim } from "../animation";

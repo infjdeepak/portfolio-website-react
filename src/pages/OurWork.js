@@ -13,6 +13,7 @@ import {
   frameAnim,
 } from "../animation";
 import { useScroll } from "../components/useScroll";
+import ScrollUp from "../components/ScrollUp";
 const OurWork = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
@@ -77,6 +78,7 @@ const OurWork = () => {
           </Hide>
         </Link>
       </Movie>
+      <ScrollUp />
     </Work>
   );
 };

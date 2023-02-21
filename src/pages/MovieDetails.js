@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+import ScrollUp from "../components/ScrollUp";
 const MovieDetails = () => {
   const url = useLocation().pathname;
   const [movies, setMovies] = useState(MovieState);
@@ -40,6 +41,7 @@ const MovieDetails = () => {
           </DisplayImage>
         </Details>
       )}
+      <ScrollUp />
     </>
   );
 };
