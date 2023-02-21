@@ -97,7 +97,7 @@ export const lineAnim = {
 
 export const frameAnim = {
   hidden: {
-    x: "-130%",
+    x: "-180%",
     skew: "45deg",
   },
   show: {

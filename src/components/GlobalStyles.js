@@ -22,6 +22,12 @@ const GlobalStyles = createGlobalStyle`
 }
 html{
     font-size: 62.5%;
+    @media screen and (max-width: 1200px) {
+        font-size: 53%;
+    }
+    @media screen and (max-width: 920px) {
+        font-size: 45%;
+    }
 }
 body{
     background: #1b1b1b;
@@ -48,12 +54,12 @@ h5{
     font-size: 2rem;
 }
 p{
-    font-size: 2rem;
+    font-size: 2.4rem;
     padding: 4rem 0;
     color: #ccc;
 }
 a{
-    font-size: 2rem;
+    font-size: 2.4rem;
     text-decoration: none;
     color: #ccc;
 }
@@ -64,7 +70,7 @@ span{
 }
 button{
     font-family: 'Inter', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
     padding: 1rem 3rem;

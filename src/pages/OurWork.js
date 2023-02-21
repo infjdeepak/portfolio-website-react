@@ -93,6 +93,9 @@ const Movie = styled(motion.div)`
   min-height: 90vh;
   min-height: 90svh;
   padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   .line {
     width: 100%;
     background: #23d997;
@@ -114,8 +117,8 @@ const Frame1 = styled(motion.div)`
   position: fixed;
   top: 10%;
   left: 0;
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: 100%;
   background: lightcyan;
 `;
 const Frame2 = styled(Frame1)`

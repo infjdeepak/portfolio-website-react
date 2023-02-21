@@ -6,23 +6,25 @@ export const About = styled(motion.div)`
   padding: 4rem 5%;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   gap: 5rem;
   position: relative;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 export const Description = styled(motion.div)`
-  flex: 2 1 30rem;
+  flex: 2;
 `;
 export const Hide = styled.div`
   overflow: hidden;
 `;
 export const Image = styled.div`
-  flex: 1 1 30rem;
+  flex: 1;
   overflow: hidden;
   text-align: end;
   img {
     width: 100%;
-    height: 55rem;
+    height: 75vh;
     object-fit: cover;
   }
 `;

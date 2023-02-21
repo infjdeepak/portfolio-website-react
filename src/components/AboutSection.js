@@ -1,5 +1,5 @@
 import home1 from "../img/home1.png";
-// import styled from "styled-components";
+import styled from "styled-components";
 import { About, Description, Hide, Image } from "../styles";
 import Wave from "./Wave";
 import { motion } from "framer-motion";
@@ -7,7 +7,7 @@ import { titleAnim, fade, imageAnim } from "../animation";
 const AboutSection = () => {
   return (
     <About>
-      <Description>
+      <AboutDescription>
         <div className="title">
           <Hide>
             <motion.h2 variants={titleAnim}>We work to make</motion.h2>
@@ -27,7 +27,7 @@ const AboutSection = () => {
           assist you in accomplishing your goal..
         </motion.p>
         <motion.button variants={fade}>Contact Us</motion.button>
-      </Description>
+      </AboutDescription>
       <Image>
         <motion.img variants={imageAnim} src={home1} alt="man with camera" />
       </Image>
@@ -36,5 +36,9 @@ const AboutSection = () => {
   );
 };
 //styled components
-
+const AboutDescription = styled(Description)`
+  @media screen and (max-width: 800px) {
+    text-align: center;
+  }
+`;
 export default AboutSection;
