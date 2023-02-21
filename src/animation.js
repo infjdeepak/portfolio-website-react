@@ -8,7 +8,7 @@ export const pageAnimation = {
     y: 0,
 
     transition: {
-      duration: 0.6,
+      duration: 0.7,
       when: "beforeChildren",
       staggerChildren: 0.2,
     },
@@ -16,7 +16,7 @@ export const pageAnimation = {
   exit: {
     opacity: 0,
     transition: {
-      duration: 0.6,
+      duration: 0.7,
     },
   },
 };
@@ -24,6 +24,10 @@ export const pageAnimation = {
 export const titleAnim = {
   hidden: {
     y: 200,
+    transition: {
+      ease: "easeOut",
+      duration: 0.7,
+    },
   },
   show: {
     y: 0,
@@ -42,7 +46,9 @@ export const fade = {
     opacity: 1,
     transition: {
       ease: "easeOut",
-      duration: 0.8,
+      duration: 0.7,
+      when: "beforeChildren",
+      staggerChildren: 0.2,
     },
   },
 };
@@ -72,7 +78,7 @@ export const waveAnim = {
     pathOffset: 0,
     transition: {
       ease: "easeOut",
-      duration: 0.8,
+      duration: 0.7,
     },
   },
 };
@@ -97,6 +103,20 @@ export const frameAnim = {
   show: {
     x: "100%",
     skew: "0deg",
+    transition: {
+      ease: "easeOut",
+      duration: 0.7,
+    },
+  },
+};
+export const swipeAnim = {
+  hidden: {
+    x: "-80%",
+    opacity: 0,
+  },
+  show: {
+    x: 0,
+    opacity: 1,
     transition: {
       ease: "easeOut",
       duration: 0.7,

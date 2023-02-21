@@ -2,26 +2,24 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 const Nav = () => {
   return (
-    <header>
-      <Navbar>
-        <div>
-          <Link to="/" className="logo">
-            Portfolio
-          </Link>
-        </div>
-        <ul className="nav-links">
-          <li>
-            <Link to="/">1. About Us</Link>
-          </li>
-          <li>
-            <Link to="/work">2. Our Work</Link>
-          </li>
-          <li>
-            <Link to="/contact">3. Contact Us</Link>
-          </li>
-        </ul>
-      </Navbar>
-    </header>
+    <Navbar>
+      <div>
+        <Link to="/" className="logo">
+          Portfolio
+        </Link>
+      </div>
+      <ul className="nav-links">
+        <li>
+          <Link to="/">1. About Us</Link>
+        </li>
+        <li>
+          <Link to="/work">2. Our Work</Link>
+        </li>
+        <li>
+          <Link to="/contact">3. Contact Us</Link>
+        </li>
+      </ul>
+    </Navbar>
   );
 };
 //styled components
@@ -33,6 +31,9 @@ const Navbar = styled.nav`
   align-items: center;
   justify-content: space-between;
   background: #282828;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   .logo {
     font-family: "Lobster", cursive;
     font-weight: 400;

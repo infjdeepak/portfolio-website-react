@@ -1,14 +1,17 @@
 import Toggle from "./Toggle";
 import styled from "styled-components";
 import { About } from "../styles";
-import { motion, AnimateSharedLayout } from "framer-motion";
+import { motion, LayoutGroup } from "framer-motion";
+import { fade } from "../animation";
+import { useScroll } from "./useScroll";
 const FaqSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Faq>
+    <Faq ref={element} animate={controls} variants={fade} initial={"hidden"}>
       <h2 className="title">
         Any questions? <br /> <span>FAQ</span>
       </h2>
-      <AnimateSharedLayout>
+      <LayoutGroup>
         <Toggle title="How do i start?">
           <motion.div layout className="answer">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -52,7 +55,7 @@ const FaqSection = () => {
             </p>
           </motion.div>
         </Toggle>
-      </AnimateSharedLayout>
+      </LayoutGroup>
     </Faq>
   );
 };
@@ -69,7 +72,7 @@ const Faq = styled(About)`
     width: 100%;
   }
   .question {
-    margin: 4rem 0;
+    margin: 5rem 0;
     cursor: pointer;
   }
   .answer {

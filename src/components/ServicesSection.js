@@ -4,15 +4,26 @@ import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import styled from "styled-components";
-import { About, Description, Image } from "../styles";
-
+import { About, Description, Image, Hide } from "../styles";
+//scroll
+import { useScroll } from "./useScroll";
+import { fade, imageAnim, swipeAnim } from "../animation";
+import { motion } from "framer-motion";
+//
 const ServicesSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Services>
-      <Description>
+    <Services
+      ref={element}
+      variants={fade}
+      initial={"hidden"}
+      animate={controls}
+    >
+      <Description variants={swipeAnim}>
         <h2 className="title">
           High <span>quality</span> service.
         </h2>
+
         <Cards>
           <Card>
             <div className="icon">
@@ -45,7 +56,7 @@ const ServicesSection = () => {
         </Cards>
       </Description>
       <Image>
-        <img src={home2} alt="camera" />
+        <motion.img src={home2} alt="camera" variants={imageAnim} />
       </Image>
     </Services>
   );
@@ -56,7 +67,7 @@ const Services = styled(About)`
     margin-bottom: 4rem;
   }
 `;
-const Cards = styled.div`
+const Cards = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;

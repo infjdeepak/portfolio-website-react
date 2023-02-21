@@ -12,7 +12,10 @@ import {
   lineAnim,
   frameAnim,
 } from "../animation";
+import { useScroll } from "../components/useScroll";
 const OurWork = () => {
+  const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
   return (
     <Work
       variants={pageAnimation}
@@ -38,18 +41,40 @@ const OurWork = () => {
           </Hide>
         </Link>
       </Movie>
-      <Movie>
-        <h2>The Racer</h2>
-        <div className="line"></div>
+      <Movie
+        ref={element}
+        variants={fade}
+        animate={controls}
+        initial={"hidden"}
+      >
+        <motion.h2 variants={fade}>The Racer</motion.h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-racer">
-          <img src={theracerSmall} alt="the racer" />
+          <Hide>
+            <motion.img
+              variants={imageAnim}
+              src={theracerSmall}
+              alt="the racer"
+            />
+          </Hide>
         </Link>
       </Movie>
-      <Movie>
-        <h2>Good Times</h2>
-        <div className="line"></div>
+      <Movie
+        ref={element2}
+        variants={fade}
+        animate={controls2}
+        initial={"hidden"}
+      >
+        <motion.h2 variants={fade}>Good Times</motion.h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/good-times">
-          <img src={goodtimeSmall} alt="good times" />
+          <Hide>
+            <motion.img
+              variants={imageAnim}
+              src={goodtimeSmall}
+              alt="good times"
+            />
+          </Hide>
         </Link>
       </Movie>
     </Work>
@@ -62,7 +87,7 @@ const Work = styled(motion.div)`
   color: #1b1b1b;
   background: whitesmoke;
 `;
-const Movie = styled.div`
+const Movie = styled(motion.div)`
   min-height: 90vh;
   min-height: 90svh;
   padding: 4rem 0;
