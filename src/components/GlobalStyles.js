@@ -6,6 +6,19 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  background-color: rgba(155, 155, 155, 0.5);
 }
 html{
     font-size: 62.5%;
