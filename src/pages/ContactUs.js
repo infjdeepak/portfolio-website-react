@@ -43,6 +43,9 @@ const Contact = styled(motion.div)`
   padding: 4rem 5%;
   background: whitesmoke;
   color: #353535;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 const Title = styled(motion.div)`
   margin-bottom: 4rem;
